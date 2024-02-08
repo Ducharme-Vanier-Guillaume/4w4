@@ -4,6 +4,8 @@
     --couleur-arriere-galerie: #bce2d1;
     --couleur-arriere-evenement: #c3bcd6;
     --couleur-arriere-footer: #9cbcbd;
+    --transparence: 80%;
+    --largeur-site: 900px;
   }
 
 body{
@@ -23,9 +25,9 @@ body{
 .global > header,
 .global > footer{
     // flex : grow shrink basis
-    flex: 0 1 900px;
+    flex: 0 1 var(--largeur-site);
     border: 1px solid gray;
-    background-color: rgba(#000, .1);
+    background-color: rgba(#000, .05);
     padding: 5rem 1rem;
 }
 
