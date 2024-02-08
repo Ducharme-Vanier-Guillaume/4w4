@@ -20,26 +20,76 @@ Dévellopé dans le cadrre du cour 4w4
 :root {
   --couleur-arriere-entete: #ccc ;
   --couleur-arriere-acceuil: #dba7a7;
+  --couleur-arriere-acceuil: #c47e7e;
+  --couleur-arriere-evenement: #c04343;
+  --couleur-arriere-footer: #3b9fa3;
 }
 
 /* Règle de base */
 /* 
 Sélecteur  textuelle de base
 */
+h1 {
+  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: clamp(1rem, -0.58rem + 6.29vw, 3.75rem);
+  color: rgba(30, 75, 40, 0.8);
+}
+
+h3 {
+  font-size: clamp(1rem, -0.58rem + 3.29vw, 2.75rem);
+  color: rgba(87, 107, 73, 0.8);
+}
+
 /* egle de pagination */
+:root {
+  --couleur-arriere-entete: #dfdba9 ;
+  --couleur-arriere-acceuil: #cc9999;
+  --couleur-arriere-galerie: #bce2d1;
+  --couleur-arriere-evenement: #c3bcd6;
+  --couleur-arriere-footer: #9cbcbd;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
   display: flex;
   justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
+  flex: 0 1 900px;
   border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5rem 1rem;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#acceuil {
+  background-color: var(--couleur-arriere-acceuil);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
 }/*# sourceMappingURL=style.css.map */
