@@ -18,11 +18,30 @@ Dévellopé dans le cadrre du cour 4w4
 */
 /* variables css */
 :root {
-  --couleur-arriere-entete: #ccc ;
-  --couleur-arriere-acceuil: #dba7a7;
-  --couleur-arriere-acceuil: #c47e7e;
-  --couleur-arriere-evenement: #c04343;
-  --couleur-arriere-footer: #3b9fa3;
+  --transparence: 80%;
+  --largeur-site: 900px;
+  --nb-element: 5;
+  --increment-angle: calc(360/ var(--nb-element));
+  --angle-initial: 351;
+  --hu1: var(--angle-initial);
+  --hu2: calc(var(--hu1) + var(--increment-angle));
+  --hu3: calc(var(--hu2) + var(--increment-angle));
+  --hu4: calc(var(--hu3) + var(--increment-angle));
+  --hu5: calc(var(--hu4) + var(--increment-angle));
+  --s-couleur-arriere: 89%;
+  --l-couleur-arriere: 73%;
+  --s-couleur: 100%;
+  --l-couleur: 80%;
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere)) ;
+  --couleur-arriere-acceuil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  --couleur-arriere-galerie: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  --couleur-arriere-evenement: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur), 100%) ;
+  --couleur-acceuil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+  --couleur-galerie: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
+  --couleur-evenement: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+  --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
 }
 
 /* Règle de base */
@@ -31,12 +50,10 @@ Sélecteur  textuelle de base
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   font-size: clamp(1rem, -0.58rem + 6.29vw, 3.75rem);
-  color: rgb(30 75 40/var(--transparence));
 }
 
 h3 {
@@ -70,16 +87,6 @@ hr {
 }
 
 /* egle de pagination */
-:root {
-  --couleur-arriere-entete: #dfdba9 ;
-  --couleur-arriere-acceuil: #cc9999;
-  --couleur-arriere-galerie: #bce2d1;
-  --couleur-arriere-evenement: #c3bcd6;
-  --couleur-arriere-footer: #9cbcbd;
-  --transparence: 80%;
-  --largeur-site: 900px;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -96,27 +103,31 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 var(--largeur-site);
-  border: 1px solid gray;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(107, 107, 107, 0.2);
   padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #acceuil {
   background-color: var(--couleur-arriere-acceuil);
+  color: var(--couleur-acceuil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }/*# sourceMappingURL=style.css.map */

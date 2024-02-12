@@ -1,12 +1,4 @@
-:root {
-    --couleur-arriere-entete: #dfdba9 ;
-    --couleur-arriere-acceuil: #cc9999;
-    --couleur-arriere-galerie: #bce2d1;
-    --couleur-arriere-evenement: #c3bcd6;
-    --couleur-arriere-footer: #9cbcbd;
-    --transparence: 80%;
-    --largeur-site: 900px;
-  }
+
 
 body{
     display: flex;
@@ -26,23 +18,33 @@ body{
 .global > footer{
     // flex : grow shrink basis
     flex: 0 1 var(--largeur-site);
-    border: 1px solid gray;
-    background-color: rgba(#000, .05);
+   background-color: rgba($color: #6b6b6b, $alpha: 0.2);
+  
     padding: 5rem 1rem;
 }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
+    
 }
 #acceuil{
     background-color: var(--couleur-arriere-acceuil);
+    color: var(--couleur-acceuil);
+   
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-galerie);
+    
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-evenement);
+    
 }
 #footer{
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
+    
 }

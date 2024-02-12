@@ -6,11 +6,11 @@ Sélecteur  textuelle de base
 
 h1 {
     font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-    color: rgba(#000, .5);
+    
 }
 h2 {
      font-size: clamp(1rem, -0.58rem + 6.29vw, 3.75rem);
-     color: rgb(30 75 40 / var(--transparence));
+
 }
 h3 {
     font-size: clamp(1rem, -0.58rem + 3.29vw, 2.75rem);
