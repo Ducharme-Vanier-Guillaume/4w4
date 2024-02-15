@@ -106,6 +106,44 @@ body {
   padding: 5rem 1rem;
 }
 
+.btnFooter {
+  background-color: var(--couleur-entete);
+  width: 25%;
+  height: 15%;
+  font-family: fantasy;
+  animation: boutonFooter2 1s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes boutonFooter2 {
+  from {
+    background-color: var(--couleur-entete);
+    transform: scale(115%);
+    color: black;
+  }
+  to {
+    background-color: black;
+    transform: scale(100%);
+    color: white;
+  }
+}
+.btnFooter:hover {
+  animation: boutonFooter 1s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes boutonFooter {
+  from {
+    background-color: black;
+    transform: scale(100%);
+    color: white;
+  }
+  to {
+    background-color: var(--couleur-entete);
+    transform: scale(115%);
+    color: black;
+  }
+}
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
