@@ -18,14 +18,17 @@ body{
 .global > footer{
     // flex : grow shrink basis
     flex: 0 1 var(--largeur-site);
-   background-color: rgba($color: #6b6b6b, $alpha: 0.2);
+//    background-color: rgba($color: #6b6b6b, $alpha: 0.2);
   
     padding: 5rem 1rem;
 }
 
+
+
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
+    position: relative;
     
 }
 #acceuil{
@@ -36,11 +39,14 @@ body{
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
+    z-index: 1;
+    background : linear-gradient(180deg, var(--couleur-arriere-acceuil) 50%, var(--couleur-arriere-evenement)50%)
     
 }
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-evenement);
+    position: relative;
     
 }
 #footer{

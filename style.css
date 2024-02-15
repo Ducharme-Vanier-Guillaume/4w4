@@ -32,11 +32,11 @@ Dévellopé dans le cadrre du cour 4w4
   --l-couleur-arriere: 73%;
   --s-couleur: 100%;
   --l-couleur: 80%;
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere)) ;
-  --couleur-arriere-acceuil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-galerie: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-evenement: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 90%) ;
+  --couleur-arriere-acceuil: hsl(var(--hu1), var(--s-couleur-arriere), 80% );
+  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 70% );
+  --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 60% );
+  --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
   --couleur-entete: hsl(var(--hu1), var(--s-couleur), 100%) ;
   --couleur-acceuil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
   --couleur-galerie: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
@@ -103,13 +103,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 var(--largeur-site);
-  background-color: rgba(107, 107, 107, 0.2);
   padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #acceuil {
@@ -120,14 +120,51 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 83px;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: var(--couleur-arriere-galerie);
 }/*# sourceMappingURL=style.css.map */
