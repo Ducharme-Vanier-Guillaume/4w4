@@ -106,6 +106,20 @@ body {
   padding: 5rem 1rem;
 }
 
+.citation {
+  font-size: larger;
+  color: black;
+  font-family: auto;
+  font-style: italic;
+  box-shadow: 10px 5px 5px #5d4646;
+  background-color: antiquewhite;
+  padding: 0.5% 2% 3% 2%;
+}
+
+.citation p {
+  color: black;
+}
+
 .btnFooter {
   background-color: var(--couleur-entete);
   width: 25%;
