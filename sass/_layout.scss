@@ -23,6 +23,12 @@ body{
     padding: 5rem 1rem;
 }
 
+.global > header{
+    flex: 0 1 1300px;
+    margin-top: -5%;
+    padding-bottom: 6%;
+}
+
 .citation{
     font-size: larger;
     color: black;

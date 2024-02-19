@@ -1,0 +1,45 @@
+button{
+    font-size: clamp(-1.625rem, 0.4375rem + 1vw, 1.5rem);
+    padding: 1% 1%;
+    background-image: linear-gradient(180deg, rgb(228, 142, 213), rgb(235, 176, 87));
+    animation: boutonentete1 .4s forwards ;
+    animation-timing-function: ease-in-out;
+
+&:hover{ // button:hover
+    background-image: linear-gradient(180deg, rgb(235, 176, 87), rgb(228, 142, 213));
+    animation: boutonentete2 .4s forwards ;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+&:active{ // button:active
+    background-image: linear-gradient(180deg, rgb(190, 143, 71), rgb(177, 110, 166));
+
+}
+}
+
+@keyframes boutonentete1{
+    from{
+        color: rgb(255, 255, 255);
+        transform: scale(115%);
+    }
+    
+    to{
+        color: rgb(0, 0, 0);
+        transform: scale(100%);
+    }
+    }
+
+@keyframes boutonentete2{
+    from{
+        color: black;
+        transform: scale(100%);
+    }
+    
+    to{
+        color: rgb(255, 255, 255);
+        transform: scale(115%);
+    }
+    }
+
