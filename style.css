@@ -20,6 +20,8 @@ Dévellopé dans le cadrre du cour 4w4
 :root {
   --transparence: 80%;
   --largeur-site: 1100px;
+  --couleur-blanc: #ffffff;
+  --couleur-noir: #000000;
   --couleur-liens-focus: #3b9fa3;
   --couleur-liens-visited: #164344;
   --couleur-bleu-fonce: #4b535e;
@@ -48,7 +50,6 @@ Dévellopé dans le cadrre du cour 4w4
   --couleur-evenement: hsl(var(--hu1), var(--s-couleur), 44%);
   --couleur-footer: hsl(var(--hu2), var(--s-couleur), 30%);
   --couleur-lien: --couleur-entete : hsl(var(--hu1), var(--s-couleur), 100%) ;
-  --couleur-visited: hsl(var(--hu2), var(--s-couleur), 90%) ;
 }
 
 .vague {
@@ -152,21 +153,21 @@ button.entete__button:active {
 
 @keyframes boutonentete1 {
   from {
-    color: rgb(255, 255, 255);
+    color: var(--couleur-blanc);
     transform: scale(115%);
   }
   to {
-    color: rgb(0, 0, 0);
+    color: var(--couleur-noir);
     transform: scale(100%);
   }
 }
 @keyframes boutonentete2 {
   from {
-    color: black;
+    color: var(--couleur-noir);
     transform: scale(100%);
   }
   to {
-    color: rgb(255, 255, 255);
+    color: var(--couleur-blanc);
     transform: scale(115%);
   }
 }
@@ -208,74 +209,6 @@ body {
   padding-bottom: 6%;
 }
 
-.citation {
-  font-size: larger;
-  color: black;
-  font-family: auto;
-  font-style: italic;
-  box-shadow: 10px 5px 5px #5d4646;
-  background-color: antiquewhite;
-  padding: 0.5% 2% 3% 2%;
-}
-
-.citation p {
-  color: black;
-}
-
-.btnFooter {
-  background-color: var(--couleur-entete);
-  width: 25%;
-  height: 15%;
-  font-family: fantasy;
-  animation: boutonFooter2 1s forwards;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes boutonFooter2 {
-  from {
-    background-color: var(--couleur-entete);
-    transform: scale(115%);
-    color: black;
-  }
-  to {
-    background-color: black;
-    transform: scale(100%);
-    color: white;
-  }
-}
-.btnFooter:hover {
-  animation: boutonFooter 1s forwards;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes boutonFooter {
-  from {
-    background-color: black;
-    transform: scale(100%);
-    color: white;
-  }
-  to {
-    background-color: var(--couleur-entete);
-    transform: scale(115%);
-    color: black;
-  }
-}
-.images img {
-  height: 26%;
-  width: 26%;
-}
-
-.images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.liens__galerie {
-  text-align: center;
-  padding-bottom: 3%;
-}
-
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
@@ -303,6 +236,36 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.citation {
+  font-size: larger;
+  color: black;
+  font-family: auto;
+  font-style: italic;
+  box-shadow: 10px 5px 5px #5d4646;
+  background-color: antiquewhite;
+  padding: 0.5% 2% 3% 2%;
+}
+
+.citation p {
+  color: black;
+}
+
+.images img {
+  height: 26%;
+  width: 26%;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.liens__galerie {
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 /* Section de la page */
@@ -339,7 +302,7 @@ body {
 
 .recherche__input:focus {
   background-color: var(--couleur-evenement);
-  color: white;
+  color: var(--couleur-blanc);
 }
 
 .recherche__button {
@@ -347,7 +310,7 @@ body {
 }
 
 .recherche__button svg {
-  fill: white;
+  fill: var(--couleur-blanc);
 }
 
 .sociaux {

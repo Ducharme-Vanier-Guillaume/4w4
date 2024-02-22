@@ -9,9 +9,6 @@ h1 {
         font-family: "Abril Fatface", serif;
         font-weight: 400;
         font-style: normal;
-      
-      
-    
 }
 h2 {
      font-size: clamp(1rem, -0.58rem + 6.29vw, 2.75rem);
@@ -43,7 +40,6 @@ hr {
     font-size: clamp(1rem, 2.42rem + 4.29vw, 1.75rem);
     color: rgb(59, 62, 97, var(--transparence));
 }
-
 a{
     color: var(--couleur-entete);
 }

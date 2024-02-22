@@ -1,17 +1,17 @@
 :root {
     --transparence: 80%;
     --largeur-site: 1100px;
-    // --couleur-arriere-entete : #ccc ;
-    // --couleur-arriere-acceuil : #dba7a7;
-    // --couleur-arriere-acceuil : #c47e7e;
-    // --couleur-arriere-evenement : #c04343;
---couleur-liens-focus : #3b9fa3;
---couleur-liens-visited : #164344;
---couleur-bleu-fonce : #4b535e;
+
+    --couleur-blanc : #ffffff;
+    --couleur-noir : #000000;
+
+    // Couleur liens
+    --couleur-liens-focus : #3b9fa3;
+    --couleur-liens-visited : #164344;
+    --couleur-bleu-fonce : #4b535e;
 
     --nb-element : 5;
     --increment-angle : calc(360/ 3); 
-    // 360/5 = 72
     --angle-initial : 396;
     --angle-deux : 180;
     --hu1 : var(--angle-initial);
@@ -29,12 +29,14 @@
     --s-couleur : 100%; //saturation
     --l-couleur : 80%;  //luminosité
 
+    // Couleur fond
     --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), 75%) ;
     --couleur-arriere-acceuil : hsl(var(--hu2), var(--s-couleur-arriere), 70% );
     --couleur-arriere-galerie : hsl(var(--hu1), var(--s-couleur-arriere), 70% );
     --couleur-arriere-evenement : hsl(var(--hu2), var(--s-couleur-arriere), 60% );
     --couleur-arriere-footer : hsl(var(--hu1), var(--s-couleur-arriere), 65%);
 
+    // Couleur texte
     --couleur-entete : hsl(var(--hu2), var(--s-couleur), 35%) ;
     --couleur-acceuil : hsl(var(--hu1), var(--s-couleur), 44%);
     --couleur-galerie : hsl(var(--hu2), var(--s-couleur), 30%);
@@ -42,6 +44,6 @@
     --couleur-footer : hsl(var(--hu2), var(--s-couleur), 30%);
     --couleur-lien : --couleur-entete : hsl(var(--hu1), var(--s-couleur), 100%) ;
 
-    --couleur-visited : hsl(var(--hu2), var(--s-couleur), 90%)
+
 
 }

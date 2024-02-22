@@ -1,3 +1,4 @@
+// Pour barre recherche et loupe
 .recherche{
     border: 1px solid var(--couleur-bleu-fonce);
     display: flex;
@@ -11,7 +12,7 @@
 
 .recherche__input:focus{
     background-color: var(--couleur-evenement);
-    color: white;
+    color: var(--couleur-blanc);
 }
 
 .recherche__button{
@@ -19,5 +20,5 @@
 }
 
 .recherche__button svg{
-   fill: white;
+   fill: var(--couleur-blanc);
 }

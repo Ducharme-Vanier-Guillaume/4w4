@@ -1,3 +1,4 @@
+// Bouton header
 button.entete__button{
     font-size: clamp(-1.625rem, 0.4375rem + 1vw, 1.5rem);
     padding: 1% 1%;
@@ -11,8 +12,6 @@ button.entete__button{
     animation-timing-function: ease-in-out;
 }
 
-
-
 &:active{ // button:active
     background-image: linear-gradient(180deg, rgb(190, 143, 71), rgb(177, 110, 166));
 
@@ -21,24 +20,24 @@ button.entete__button{
 
 @keyframes boutonentete1{
     from{
-        color: rgb(255, 255, 255);
+        color: var(--couleur-blanc);
         transform: scale(115%);
     }
     
     to{
-        color: rgb(0, 0, 0);
+        color: var(--couleur-noir);
         transform: scale(100%);
     }
     }
 
 @keyframes boutonentete2{
     from{
-        color: black;
+        color: var(--couleur-noir);
         transform: scale(100%);
     }
     
     to{
-        color: rgb(255, 255, 255);
+        color: var(--couleur-blanc);
         transform: scale(115%);
     }
     }

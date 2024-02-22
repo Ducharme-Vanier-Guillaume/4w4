@@ -1,5 +1,4 @@
-
-
+//////////////////////////////////////////// GLOBAL ///////////////////////////////
 body{
     display: flex;
     flex-direction: column;
@@ -12,15 +11,11 @@ body{
     min-height: 40vh;
 }
 
-
 .global > section,
 .global > header,
 .global > footer{
-    // flex : grow shrink basis
-    flex: 0 1 var(--largeur-site);
-//    background-color: rgba($color: #6b6b6b, $alpha: 0.2);
-  
-    padding: 5rem 1rem;
+ flex: 0 1 var(--largeur-site);
+padding: 5rem 1rem;
 }
 
 .global > header{
@@ -28,83 +23,6 @@ body{
     margin-top: -5%;
     padding-bottom: 6%;
 }
-
-.citation{
-    font-size: larger;
-    color: black;
-    font-family: auto;
-    font-style: italic;
-    box-shadow: 10px 5px 5px #5d4646;
-    background-color: antiquewhite;
-    padding: .5% 2% 3% 2%;
-}
-
-
-.citation p {
-    color: black;
-}
-
-.btnFooter{
-    background-color: var(--couleur-entete);
-    width: 25%;
-    height: 15%;
-    font-family: fantasy;
-    animation: boutonFooter2 1s forwards ;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes boutonFooter2{
-    from{
-        background-color: var(--couleur-entete) ;
-        transform: scale(115%);
-        color: black;
-    }
-    
-    to{
-        
-        background-color: black ;
-        transform: scale(100%);
-        color: white;
-    }
-    }
-
-.btnFooter:hover{
-   
-    animation: boutonFooter 1s forwards ;
-    animation-timing-function: ease-in-out;
-
-}
-
-@keyframes boutonFooter{
-from{
-    background-color: black ;
-    transform: scale(100%);
-    color: white;
-}
-
-to{
-    background-color: var(--couleur-entete) ;
-    transform: scale(115%);
-    color: black;
-}
-}
-
-.images img{
-    height: 26%;
-    width: 26%;
-}
-
-.images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.liens__galerie{
-    text-align: center;
-    padding-bottom: 3%;
-}
-
 
 #entete{
     background-color: var(--couleur-arriere-entete);
@@ -135,3 +53,38 @@ to{
     color: var(--couleur-footer);
     
 }
+
+//////////////////////////////////////////// ACCUEIL ///////////////////////////////
+
+.citation{
+    font-size: larger;
+    color: black;
+    font-family: auto;
+    font-style: italic;
+    box-shadow: 10px 5px 5px #5d4646;
+    background-color: antiquewhite;
+    padding: .5% 2% 3% 2%;
+}
+
+.citation p {
+    color: black;
+}
+
+//////////////////////////////////////////// GALERIE ///////////////////////////////
+
+.images img{
+    height: 26%;
+    width: 26%;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.liens__galerie{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
