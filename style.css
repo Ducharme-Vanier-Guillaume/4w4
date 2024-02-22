@@ -20,29 +20,69 @@ Dévellopé dans le cadrre du cour 4w4
 :root {
   --transparence: 80%;
   --largeur-site: 1100px;
+  --couleur-liens-focus: #3b9fa3;
+  --couleur-liens-visited: #164344;
+  --couleur-blanc: #244980;
   --nb-element: 5;
-  --increment-angle: calc(360/ var(--nb-element));
-  --angle-initial: 351;
+  --increment-angle: calc(360/ 3);
+  --angle-initial: 396;
+  --angle-deux: 180;
   --hu1: var(--angle-initial);
+  --hu2: var(--angle-deux);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
-  --s-couleur-arriere: 89%;
-  --l-couleur-arriere: 73%;
+  --s-couleur-arriere: 76%;
+  --l-couleur-arriere: 34%;
   --s-couleur: 100%;
   --l-couleur: 80%;
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 90%) ;
-  --couleur-arriere-acceuil: hsl(var(--hu1), var(--s-couleur-arriere), 80% );
-  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 70% );
-  --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 60% );
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 75%) ;
+  --couleur-arriere-acceuil: hsl(var(--hu2), var(--s-couleur-arriere), 70% );
+  --couleur-arriere-galerie: hsl(var(--hu1), var(--s-couleur-arriere), 70% );
+  --couleur-arriere-evenement: hsl(var(--hu2), var(--s-couleur-arriere), 60% );
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur), 56%) ;
-  --couleur-acceuil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-  --couleur-galerie: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
-  --couleur-evenement: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
-  --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+  --couleur-entete: hsl(var(--hu2), var(--s-couleur), 35%) ;
+  --couleur-acceuil: hsl(var(--hu1), var(--s-couleur), 44%);
+  --couleur-galerie: hsl(var(--hu2), var(--s-couleur), 30%);
+  --couleur-evenement: hsl(var(--hu1), var(--s-couleur), 44%);
+  --couleur-footer: hsl(var(--hu2), var(--s-couleur), 30%);
   --couleur-lien: --couleur-entete : hsl(var(--hu1), var(--s-couleur), 100%) ;
+  --couleur-visited: hsl(var(--hu2), var(--s-couleur), 90%) ;
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 83px;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: var(--couleur-arriere-galerie);
 }
 
 /* Règle de base */
@@ -72,7 +112,7 @@ h4 {
 
 h5 {
   font-size: clamp(1rem, -1.58rem + 3.29vw, 1.75rem);
-  color: rgb(150 133 89/var(--transparence));
+  color: #9f6039;
 }
 
 h6 {
@@ -88,6 +128,58 @@ p {
 hr {
   font-size: clamp(1rem, 2.42rem + 4.29vw, 1.75rem);
   color: rgb(59, 62, 97, var(--transparence));
+}
+
+a {
+  color: var(--couleur-entete);
+}
+
+button.entete__button {
+  font-size: clamp(-1.625rem, 0.4375rem + 1vw, 1.5rem);
+  padding: 1% 1%;
+  background-image: linear-gradient(180deg, rgb(228, 142, 213), rgb(235, 176, 87));
+  animation: boutonentete1 0.4s forwards;
+  animation-timing-function: ease-in-out;
+}
+button.entete__button:hover {
+  background-image: linear-gradient(180deg, rgb(235, 176, 87), rgb(228, 142, 213));
+  animation: boutonentete2 0.4s forwards;
+  animation-timing-function: ease-in-out;
+}
+button.entete__button:active {
+  background-image: linear-gradient(180deg, rgb(190, 143, 71), rgb(177, 110, 166));
+}
+
+@keyframes boutonentete1 {
+  from {
+    color: rgb(255, 255, 255);
+    transform: scale(115%);
+  }
+  to {
+    color: rgb(0, 0, 0);
+    transform: scale(100%);
+  }
+}
+@keyframes boutonentete2 {
+  from {
+    color: black;
+    transform: scale(100%);
+  }
+  to {
+    color: rgb(255, 255, 255);
+    transform: scale(115%);
+  }
+}
+a.lien {
+  margin-top: -4%;
+  font-size: 155%;
+}
+a.lien:hover, a.lien:focus {
+  color: var(--couleur-liens-focus);
+  scale: 110%;
+}
+a.lien:visited {
+  color: var(--couleur-liens-visited);
 }
 
 /* egle de pagination */
@@ -197,40 +289,7 @@ body {
   color: var(--couleur-footer);
 }
 
-.vague {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.vague svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 83px;
-}
-
-.diagonal {
-  position: relative;
-  isolation: isolate;
-}
-
-.diagonal::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  transform: skewY(-5deg);
-  background-color: var(--couleur-arriere-galerie);
-}
-
+/* Section de la page */
 .entete__header {
   background-image: url("images/Patagonia.png");
   background-repeat: no-repeat;
@@ -242,48 +301,40 @@ body {
   display: block;
 }
 
-button {
-  font-size: clamp(-1.625rem, 0.4375rem + 1vw, 1.5rem);
-  padding: 1% 1%;
-  background-image: linear-gradient(180deg, rgb(228, 142, 213), rgb(235, 176, 87));
-  animation: boutonentete1 0.4s forwards;
-  animation-timing-function: ease-in-out;
-}
-button:hover {
-  background-image: linear-gradient(180deg, rgb(235, 176, 87), rgb(228, 142, 213));
-  animation: boutonentete2 0.4s forwards;
-  animation-timing-function: ease-in-out;
-}
-button:active {
-  background-image: linear-gradient(180deg, rgb(190, 143, 71), rgb(177, 110, 166));
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 
-@keyframes boutonentete1 {
-  from {
-    color: rgb(255, 255, 255);
-    transform: scale(115%);
-  }
-  to {
-    color: rgb(0, 0, 0);
-    transform: scale(100%);
-  }
+/* les composants*/
+.recherche {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
 }
-@keyframes boutonentete2 {
-  from {
-    color: black;
-    transform: scale(100%);
-  }
-  to {
-    color: rgb(255, 255, 255);
-    transform: scale(115%);
-  }
+
+.recherche__input {
+  display: block;
 }
-a {
-  color: var(--couleur-lien);
+
+.recherche__input:focus {
+  background-color: var(--couleur-footer, 40%);
+  color: white;
 }
-a:hover, a:focus {
-  color: var(--couleur-hover);
+
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
-a:visited {
-  color: var(--couleur-visited);
+
+.sociaux svg {
+  fill: var(--couleur-blanc);
+}
+
+.sociaux svg:hover {
+  scale: 120%;
 }/*# sourceMappingURL=style.css.map */

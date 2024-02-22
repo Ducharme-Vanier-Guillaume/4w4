@@ -1,0 +1,16 @@
+.recherche{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.recherche__input{
+    display: block;
+}
+
+.recherche__input:focus{
+    background-color: var(--couleur-footer, 40%);
+    color: white;
+}
+
+.recherche__button{}

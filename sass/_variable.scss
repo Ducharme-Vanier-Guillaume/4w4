@@ -5,36 +5,43 @@
     // --couleur-arriere-acceuil : #dba7a7;
     // --couleur-arriere-acceuil : #c47e7e;
     // --couleur-arriere-evenement : #c04343;
-    // --couleur-arriere-footer : #3b9fa3;
+--couleur-liens-focus : #3b9fa3;
+--couleur-liens-visited : #164344;
+--couleur-blanc : #244980;
 
     --nb-element : 5;
-    --increment-angle : calc(360/ var(--nb-element)); 
+    --increment-angle : calc(360/ 3); 
     // 360/5 = 72
-    --angle-initial : 351;
+    --angle-initial : 396;
+    --angle-deux : 180;
     --hu1 : var(--angle-initial);
+    --hu2 : var(--angle-deux);
     --hu2 : calc(var(--hu1) + var(--increment-angle));
     --hu3 : calc(var(--hu2) + var(--increment-angle));
     --hu4 : calc(var(--hu3) + var(--increment-angle));
     --hu5 : calc(var(--hu4) + var(--increment-angle));
 
     // Couleur arrière plan
-    --s-couleur-arriere : 89%; //saturation
-    --l-couleur-arriere : 73%; //luminosité
+    --s-couleur-arriere : 76%; //saturation
+    --l-couleur-arriere : 34%; //luminosité
     
     // COuleur avant plan
     --s-couleur : 100%; //saturation
     --l-couleur : 80%;  //luminosité
 
-    --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), 90%) ;
-    --couleur-arriere-acceuil : hsl(var(--hu1), var(--s-couleur-arriere), 80% );
-    --couleur-arriere-galerie : hsl(var(--hu4), var(--s-couleur-arriere), 70% );
-    --couleur-arriere-evenement : hsl(var(--hu1), var(--s-couleur-arriere), 60% );
+    --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), 75%) ;
+    --couleur-arriere-acceuil : hsl(var(--hu2), var(--s-couleur-arriere), 70% );
+    --couleur-arriere-galerie : hsl(var(--hu1), var(--s-couleur-arriere), 70% );
+    --couleur-arriere-evenement : hsl(var(--hu2), var(--s-couleur-arriere), 60% );
     --couleur-arriere-footer : hsl(var(--hu1), var(--s-couleur-arriere), 65%);
 
-    --couleur-entete : hsl(var(--hu1), var(--s-couleur), 56%) ;
-    --couleur-acceuil : hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-    --couleur-galerie : hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
-    --couleur-evenement : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
-    --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+    --couleur-entete : hsl(var(--hu2), var(--s-couleur), 35%) ;
+    --couleur-acceuil : hsl(var(--hu1), var(--s-couleur), 44%);
+    --couleur-galerie : hsl(var(--hu2), var(--s-couleur), 30%);
+    --couleur-evenement : hsl(var(--hu1), var(--s-couleur), 44%);
+    --couleur-footer : hsl(var(--hu2), var(--s-couleur), 30%);
     --couleur-lien : --couleur-entete : hsl(var(--hu1), var(--s-couleur), 100%) ;
+
+    --couleur-visited : hsl(var(--hu2), var(--s-couleur), 90%)
+
 }

@@ -1,13 +1,16 @@
-a{
-    color: var(--couleur-lien);
+a.lien{
+    margin-top: -4%;
+    font-size: 155%;
 
 
 &:hover,
 &:focus{
-    color: var(--couleur-hover);
+    color: var(--couleur-liens-focus);
+    
+    scale: 110%;
 }
 
 &:visited{
-    color: var(--couleur-visited);
+    color: var(--couleur-liens-visited);
 }
 }

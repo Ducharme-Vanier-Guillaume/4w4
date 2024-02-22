@@ -20,19 +20,28 @@ Dévellopé dans le cadrre du cour 4w4
 /* variables css */
 @import "variable";
 
-
-/* Règle de base */
-@import "base/h";
-
-/* egle de pagination */
-@import "layout";
-
 @import "effet/vague" ;
 
 @import "effet/diagonal";
 
-@import "entete";
+
+
+/* Règle de base */
+@import "base/h";
 
 @import "base/bouton";
 
-@import "base/liens"
+@import "base/liens";
+
+/* egle de pagination */
+@import "layout";
+
+/* Section de la page */
+@import "entete";
+
+@import"footer";
+
+/* les composants*/ 
+@import "composant/recherche";
+
+@import "composant/sociaux";
