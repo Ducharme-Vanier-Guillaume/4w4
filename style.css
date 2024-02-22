@@ -22,7 +22,7 @@ Dévellopé dans le cadrre du cour 4w4
   --largeur-site: 1100px;
   --couleur-liens-focus: #3b9fa3;
   --couleur-liens-visited: #164344;
-  --couleur-blanc: #244980;
+  --couleur-bleu-fonce: #4b535e;
   --nb-element: 5;
   --increment-angle: calc(360/ 3);
   --angle-initial: 396;
@@ -260,6 +260,17 @@ body {
     color: black;
   }
 }
+.images img {
+  height: 26%;
+  width: 26%;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
@@ -311,18 +322,27 @@ body {
 
 /* les composants*/
 .recherche {
-  border: 1px solid white;
+  border: 1px solid var(--couleur-bleu-fonce);
   display: flex;
   justify-content: center;
 }
 
 .recherche__input {
   display: block;
+  background-color: var(--couleur-bleu-fonce);
 }
 
 .recherche__input:focus {
-  background-color: var(--couleur-footer, 40%);
+  background-color: var(--couleur-evenement);
   color: white;
+}
+
+.recherche__button {
+  background-color: var(--couleur-bleu-fonce);
+}
+
+.recherche__button svg {
+  fill: white;
 }
 
 .sociaux {
@@ -332,7 +352,7 @@ body {
 }
 
 .sociaux svg {
-  fill: var(--couleur-blanc);
+  fill: var(--couleur-bleu-fonce);
 }
 
 .sociaux svg:hover {

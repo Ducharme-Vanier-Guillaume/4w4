@@ -1,16 +1,23 @@
 .recherche{
-    border: 1px solid white;
+    border: 1px solid var(--couleur-bleu-fonce);
     display: flex;
     justify-content: center;
 }
 
 .recherche__input{
     display: block;
+    background-color: var(--couleur-bleu-fonce);
 }
 
 .recherche__input:focus{
-    background-color: var(--couleur-footer, 40%);
+    background-color: var(--couleur-evenement);
     color: white;
 }
 
-.recherche__button{}
+.recherche__button{
+    background-color: var(--couleur-bleu-fonce);
+}
+
+.recherche__button svg{
+   fill: white;
+}

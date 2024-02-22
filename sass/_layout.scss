@@ -89,6 +89,17 @@ to{
 }
 }
 
+.images img{
+    height: 26%;
+    width: 26%;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 
 #entete{
