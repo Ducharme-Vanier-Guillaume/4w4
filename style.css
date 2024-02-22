@@ -271,6 +271,11 @@ body {
   justify-content: space-around;
 }
 
+.liens__galerie {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
