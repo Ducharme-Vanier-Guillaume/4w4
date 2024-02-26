@@ -1,0 +1,15 @@
+.section__cours{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 27%;
+    background-color: var(--couleur-liens-visited);
+    padding: 1rem;
+}

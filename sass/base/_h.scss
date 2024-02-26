@@ -16,15 +16,15 @@ h2 {
 }
 h3 {
     font-size: clamp(1rem, -0.58rem + 3.29vw, 1.75rem);
-    color: rgb(87 107 73 / var(--transparence));
+    color : rgba($color: #9f6039, $alpha: 1.0)
 }
 h4 {
     font-size: clamp(1rem, -0.58rem + 3.29vw, 1.75rem);
     color: rgb(87 95 73/var(--transparence));
 }
 h5 {
-    font-size: clamp(1rem, -1.58rem + 3.29vw, 1.75rem);
-    color : rgba($color: #9f6039, $alpha: 1.0)
+    font-size: clamp(1rem, -1.58rem + 3.29vw, 1.4rem);
+    color : rgba($color: #ee8442, $alpha: 1.0)
 }
 h6 {
     font-size: clamp(1rem, -1.58rem + 1.29vw, 1.75rem);
@@ -32,8 +32,10 @@ h6 {
 }
 
 p {
-    font-size: clamp(1rem, 2.42rem + 4.29vw, 1.75rem);
-    color: rgb(59, 62, 97, var(--transparence));
+    font-size: clamp(1rem, 2.42rem + 4.29vw, 1.3rem);
+    color: var(--couleur-blanc);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
 }
 
 hr {
