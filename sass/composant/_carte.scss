@@ -9,7 +9,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 1 27%;
+    flex: 1 1 27%;
     background-color: var(--couleur-liens-visited);
     padding: 1rem;
+    border-radius: 3%;
+}
+
+.carte h5{
+    margin: 1%;
+}
+
+.carte:hover{
+    scale: 105%;
 }

@@ -9,6 +9,7 @@ h1 {
         font-family: "Abril Fatface", serif;
         font-weight: 400;
         font-style: normal;
+        
 }
 h2 {
      font-size: clamp(1rem, -0.58rem + 6.29vw, 2.75rem);
@@ -24,7 +25,10 @@ h4 {
 }
 h5 {
     font-size: clamp(1rem, -1.58rem + 3.29vw, 1.4rem);
-    color : rgba($color: #ee8442, $alpha: 1.0)
+    color : rgba($color: #ee8442, $alpha: 1.0);
+    margin: 0;
+    
+    
 }
 h6 {
     font-size: clamp(1rem, -1.58rem + 1.29vw, 1.75rem);

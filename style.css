@@ -114,6 +114,7 @@ h4 {
 h5 {
   font-size: clamp(1rem, -1.58rem + 3.29vw, 1.4rem);
   color: #ee8442;
+  margin: 0;
 }
 
 h6 {
@@ -339,7 +340,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 27%;
+  flex: 1 1 27%;
   background-color: var(--couleur-liens-visited);
   padding: 1rem;
+  border-radius: 3%;
+}
+
+.carte h5 {
+  margin: 1%;
+}
+
+.carte:hover {
+  scale: 105%;
 }/*# sourceMappingURL=style.css.map */

@@ -48,14 +48,21 @@
             
             <?php if(have_posts()):
                 while(have_posts()): the_post();
-                $titre = get_the_title();  
+                
+                $titre = get_the_title();
                 $sigle = substr($titre,0, 7);
+                $heures = substr($titre, -6);
+                $titre = substr($titre,7, -6);  
+                
+                
                 // strpos()
 
                 ?>
                 <div class="carte">
-                <h5><?php echo $sigle; ?></h5>
-              <h5><?php echo $titre; ?></h5> 
+                    <h5><?php echo $sigle; ?></h5>
+                    <h5><?php echo $titre; ?></h5> 
+                    <h5><?php echo $heures; ?></h5> 
+      
               <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
               </div>
             <?php endwhile; ?>
