@@ -2,30 +2,20 @@
 ## Reproduuire et améliorer la maquette exemple présenter en cours
                                                                                        
 
-### continuer la modification du labo 2
-- Amélioration du dossier Sass
-- Ajout dasn style.css
-- Utilisations de différentes techniques pour élaborer une palette de couleur
-    - monochrone (une seul teinte et on fait varié la saturation et la luminosité)
-    - Complémentaire (deux teinte gérées à 180deg)
-    - Triade (trois teintes de de +/- 120deg)
-    - Améliorer l'entête en ajoutant une image en background qui s'enligne horizontalement 
-      avec les titres de l'entête
-    - Création d'un bouton utilisant les variables, la propriété background-image, 
-      linear-gradient, le bouton réagiot aux évènements :hover et :active
-    - Création de liens réagissant aux évènements :hover et :visited :focus
-- Amélioration générale de la pagination
-- Ajout de nouveau évènements HTML
-- Utilisation de la règle 60-30-10
+### continuer la modification du labo 3
+Guillaume Ducharme-Vanier
 
-A réaliser :
-- Améliorer l'entête
-- Ajouter une image
-- Rajoute un bouton
-- Ajouter liens
-- Améliorer la pagination
-- Ajouter de nouveaux éléments HTML
-- Une github page
+##
+- Décomposé le titre de chaque cours:
+  - sigle du cours ex: 582-4W4
+  - le titre du cours ex: Conception d'interface et développement Web
+  - la durée du cours : 90h
+  - Garder les 30 premiers mots de la description du cours.
+
+##
+- Organistion du code, 3 commits minimum (1 point)
+- Résultat sous forme de github page avec index.htm (.5 point)
+- Design global de la page (.5 point)
 
 ## ma git hub page
 Liens du site gitHub : https://ducharme-vanier-guillaume.github.io/4w4/

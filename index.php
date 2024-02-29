@@ -63,7 +63,7 @@
                     <h5><?php echo $titre; ?></h5> 
                     <h5><?php echo $heures; ?></h5> 
       
-              <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+              <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
@@ -88,9 +88,19 @@
 
         </div>
         <div class="images">
-            <img src="images/image1.jpg" alt="alternatetext">
-            <img src="images/image2.jpg" alt="">
-            <img src="images/image3.jpg" alt="">
+
+        <?php 
+            $image1='https://img.freepik.com/photos-premium/sommets-montagne-hiver-illustration-3d-du-paysage-montagnes-couvertes-neige_160901-5829.jpg';
+            $image2 = 'https://th.bing.com/th/id/OIG2.LXt4Ooo.p5EUFyuITtV.';
+            $image3 = 'https://img.freepik.com/photos-premium/montagnes-refletees-brume_1059430-22636.jpg';
+            $image4 = 'https://media.istockphoto.com/id/1089729132/fr/photo/homme-de-randonneur-au-sommet-de-la-montagne-il-sagit-dune-illustration-de-rendu-3d.jpg?s=612x612&w=0&k=20&c=HYZLnEMvX5qZuQNUx0XijR79gJXKvqUUb19j2dQN8RY= ';
+        ?>
+
+            <img src="<?php echo $image1;?>">
+            <img src="<?php echo $image2;?>">
+            <img src="<?php echo $image3;?>">
+            <img src="<?php echo $image4;?>">
+            
         </div>
         
     </section>
