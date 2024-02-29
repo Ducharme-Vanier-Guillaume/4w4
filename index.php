@@ -47,9 +47,15 @@
             // } -->
             
             <?php if(have_posts()):
-                while(have_posts()): the_post();  ?>
+                while(have_posts()): the_post();
+                $titre = get_the_title();  
+                $sigle = substr($titre,0, 7);
+                // strpos()
+
+                ?>
                 <div class="carte">
-              <h5><?php the_title(); ?></h5> 
+                <h5><?php echo $sigle; ?></h5>
+              <h5><?php echo $titre; ?></h5> 
               <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
               </div>
             <?php endwhile; ?>
