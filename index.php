@@ -14,12 +14,17 @@
 
 </head>
 <body>
+    <div id="menu" class="global">
+        <div class="entete__menu">
+            <?php wp_nav_menu(); ?>
+        </div>
+    </div>
     <div id="entete" class="global">
         <header class="entete__header">
-        <h1>Thème du groupe #2 (h1)</h1>
-        <h2>4W4 - Conception interface <span> & développement Web</span>
+        <h1 class="bgc-texte">Thème du groupe #2 (h1)</h1>
+        <h2 class="bgc-texte">4W4 - Conception interface <span> & développement Web</span>
             </h2>
-        <h3>Tim - Collège de Maisonneuve</h3>
+        <h3 class="bgc-texte">Tim - Collège de Maisonneuve</h3>
         <button class="entete__button">Évènements</button>
         <link rel="stylesheet" href="style.css">
          </header>
@@ -51,8 +56,9 @@
                 
                 $titre = get_the_title();
                 $sigle = substr($titre,0, 7);
-                $heures = substr($titre, -6);
-                $titre = substr($titre,7, -6);  
+                $pos_parenthese = strpos($titre, '(');
+                $heures = substr($titre, $pos_parenthese);
+                $titre = substr($titre,7, $pos_parenthese-7);  
                 
                 
                 // strpos()
@@ -61,9 +67,10 @@
                 <div class="carte">
                     <h5><?php echo $sigle; ?></h5>
                     <h5><?php echo $titre; ?></h5> 
-                    <h5><?php echo $heures; ?></h5> 
+                   
       
-              <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+              <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+              <h5><?php echo $heures; ?></h5> 
               </div>
             <?php endwhile; ?>
           <?php endif; ?>

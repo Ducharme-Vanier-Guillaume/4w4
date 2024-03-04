@@ -86,6 +86,17 @@ Dévellopé dans le cadrre du cour 4w4
   background-color: var(--couleur-arriere-galerie);
 }
 
+/* variables utile */
+.bgc-texte {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px, 20px;
+}
+@media screen and (min-width: 900px) {
+  .bgc-texte {
+    background-color: transparent;
+  }
+}
+
 /* Règle de base */
 /* 
 Sélecteur  textuelle de base
@@ -340,11 +351,13 @@ body {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1 1 27%;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 225px;
   background-color: var(--couleur-liens-visited);
   padding: 1rem;
   border-radius: 3%;
+  text-align: center;
 }
 
 .carte h5 {
@@ -353,4 +366,25 @@ body {
 
 .carte:hover {
   scale: 105%;
+}
+
+#menu {
+  min-height: 0%;
+  background-color: var(--couleur-liens-visited);
+}
+
+#menu a {
+  color: #ee8442;
+}
+
+.entete__menu {
+  width: 71%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  gap: 6%;
 }/*# sourceMappingURL=style.css.map */
