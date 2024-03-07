@@ -9,6 +9,7 @@ Guillaume Ducharme-Vanier
 - But du cours
   - Création d'un menu format desktop et mobile
   - le faire apparaitre lorsque l'on click sur le bouton burger
+  - Création de dossier gabarit pour y mettre les vagues
 
 ##
 Création d'une github-page à partir de index.htm
