@@ -1,45 +1,90 @@
-// <div id="menu" class="global">
-//     <div class="entete__menu">
-//     // Généré âr wp_nav_menu
-//         <div class="menu-entete-container">
-//             <ul id="menu-entete" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-6n3-stage-285h/">Communication</a></li>
-//                 <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Méthode de recherche</a></li>
-//                 <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Animation en jeu</a></li>
-//                 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8000/4w4-gdv/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">Communication d’équipe</a></li>
-//                 <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-35"><a href="http://localhost:8000/4w4-gdv/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/" aria-current="page">Méthodes de recherche</a></li>
-//             </ul>
-//         </div>
-//     </div>
-// </div>
+// <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-6n3-stage-285h/">Communication</a></li>
+// <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Méthode de recherche</a></li>
+// <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Animation en jeu</a></li>
+// <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-35"><a href="http://localhost:8000/4w4-gdv/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/" aria-current="page">Méthodes de recherche</a></li>
+// <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#accueil">Accueil</a></li>
+// <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#galerie">Galerie</a></li>
+// <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#evenement">Évènements</a></li>
+// </ul></nav>  
 
- #menu{
-    min-height: 0%;
-    background-color:  var(--couleur-liens-visited);
-}
 
 #menu a{
     color: #ee8442;;
 }
 
 .entete__menu{
-
-    width: 71%;
+    background-color:  var(--couleur-liens-visited);
+ 
+   
 }
 
-.menu-entete-container{ //div
+.menu-principal-container{ //div
+
+
+// transform: translateX(-100%);
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+height: 100%;
+transform: translateX(-100%);
+
+@media screen and (min-width:700px) {
+    transform: translateX(0%);
+    position: static;
+    height: 3em;
+  }
 
 }
 
 .menu{ // ul
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 list-style-type: none;
-gap: 6%;
+width: 100%;
+height: 100%;
+background-color:  var(--couleur-liens-visited);
+
+@media screen and (min-width:700px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
 
 }
 
-.menu-item{ //li
- 
 
-}
+#chk-burger{
+    display: none;
+  }
+  
+  #burger {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+   
+    @media screen and (min-width:700px) {
+      display : none;
+    }
+  }  
+  
+  
+  #chk-burger:checked ~ .menu-principal-container {
+    transform : translateX(0);
+  }
+
+  #burger > svg {
+    fill: black;
+  }
+
+  #chk-burger:checked + #burger > svg{
+    fill: rgb(255, 255, 255);
+  }
