@@ -395,7 +395,6 @@ body {
   .menu-principal-container {
     transform: translateX(0%);
     position: static;
-    height: 3em;
   }
 }
 
@@ -447,4 +446,22 @@ body {
 
 #chk-burger:checked + #burger > svg {
   fill: rgb(255, 255, 255);
+}
+
+.logo img {
+  width: 119%;
+  height: auto;
+}
+
+.logo {
+  width: 3%;
+  padding-left: 1%;
+  background-color: var(--couleur-liens-visited);
+  padding-top: 0.5%;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .logo {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

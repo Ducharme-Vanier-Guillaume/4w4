@@ -1,23 +1,15 @@
-# laboratoire 4
-## Ajout menu pour mobile
-                                                                                       
+# TP1 club de voyage
 
-### continuer la modification du labo 4
-Guillaume Ducharme-Vanier
+## Objectifs
+  Créeer un site web pour un club de voyage qui permettera mettre en valeur les 
+  différentes destinations de voyage
 
-##
-- But du cours
-  - Création d'un menu format desktop et mobile
-  - le faire apparaitre lorsque l'on click sur le bouton burger
-  - Création de dossier gabarit pour y mettre les vagues
+### Auteur
+### Groupe
 
-##
-Création d'une github-page à partir de index.htm
-Création du readme.md avec:
-Le nom de l'auteur
-Un résumé des étapes du labo-4
-Un lien vers votre 'github-page
-Production de 5 commits
+#### Description du projet : 
 
-## ma git hub page
-Liens du site gitHub : https://ducharme-vanier-guillaume.github.io/4w4/
+#### : Liens URL
+
+- Lien vers le serveur distant whc.ca
+- Lien vers page GitHub de la page d'accueil

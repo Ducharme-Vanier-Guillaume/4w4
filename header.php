@@ -15,6 +15,7 @@
 </head>
 <body>
     <div id="menu" class="global">
+        <div class="logo"> <?php echo get_custom_logo(); ?> </div> 
         <header class="entete__menu">
             <input id="chk-burger" type="checkbox">
                 <label id="burger" for="chk-burger">
