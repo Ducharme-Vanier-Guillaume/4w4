@@ -19,7 +19,7 @@ Dévellopé dans le cadrre du cour 4w4
 /* variables css */
 :root {
   --transparence: 80%;
-  --largeur-site: 1100px;
+  --largeur-site: 1300px;
   --couleur-blanc: #ffffff;
   --couleur-noir: #000000;
   --couleur-liens-focus: #3b9fa3;
@@ -133,7 +133,7 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1rem, -1.58rem + 3.29vw, 1.4rem);
+  font-size: clamp(1rem, 1.42rem + 3.29vw, 1.4rem);
   color: #ee8442;
   margin: 0;
 }
@@ -358,12 +358,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex: 1 1 225px;
   background-color: var(--couleur-liens-visited);
   padding: 1rem;
   border-radius: 3%;
-  text-align: center;
+  padding-left: 2%;
+  text-align: left;
 }
 
 .carte h5 {
@@ -372,6 +373,18 @@ body {
 
 .carte:hover {
   scale: 105%;
+}
+
+.carte .post-categories {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.carte .post-categories a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
 
 #menu a {

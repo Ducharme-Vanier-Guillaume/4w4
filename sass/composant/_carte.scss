@@ -9,18 +9,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1 1 calc(900px/4);
     background-color: var(--couleur-liens-visited);
     padding: 1rem;
     border-radius: 3%;
-    text-align: center;
+    padding-left: 2%;
+    text-align: left;
 }
 
 .carte h5{
     margin: 1%;
 }
 
+
+
 .carte:hover{
     scale: 105%;
+}
+
+.carte .post-categories{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.carte .post-categories a {
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
 }

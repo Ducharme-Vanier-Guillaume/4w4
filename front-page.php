@@ -16,43 +16,31 @@
  <?php
     get_template_part("gabarit/vague");
  ?>
+</div>
 
-    </div>
-    <div id="acceuil" class="global ">
-        <section class="accueil__section">
-        <h2>Accueil (h2)</h2>
-        <div class="section__cours">
-        
-            <!-- // if(have_posts()){
-            //     while(have_posts()){
-            //         the_post();
-            //         the_title('<p>', '<p>');
-                    
-            //         $contenu = get_the_content();
-            //         $contenu = wp_trim_words($contenu, 10);
-            //         echo $contenu;
-            //     }
-            // } -->
+<div id="acceuil" class="global ">
+    <section class="accueil__section">
+    <h2>Accueil (h2)</h2>
+    <div class="section__cours">
+<!--
+get_the_title() // retourne une chaine qui contient le titre
+the_title // echo du titre -->
             
-            <?php if(have_posts()):
-                while(have_posts()): the_post();
-                
-                $titre = get_the_title();
-                
- 
-                
-                
-                // strpos()
+        <?php if(have_posts()):
+        while(have_posts()): the_post();
+        ?>
 
-                ?>
-                <div class="carte">
-                    <h5><?php the_title() ?></h5> 
-                    <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
-                    <p> <a href="<?php echo get_permalink() ?>">Voir la suite</a> </p>
-              </div>
-            <?php endwhile; ?>
-          <?php endif; ?>
-       </div>
+        <div class="carte">
+            
+            <h5><?php the_title() ?></h5> 
+            <?php the_category();  ?>
+            <p class="info"><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+            <p><a href="<?php echo get_permalink() ?>">Voir la suite</a> </p>
+    
+        </div>
+    <?php endwhile; ?>
+    <?php endif; ?>
+</div>
         <!-- <p>Notre site internet pour le cours de 4w4</p>
         <blockquote class="citation" cite="https://www.huxley.net/bnw/four.html">
             <p>“Surprenez-vous tous les jours avec votre propre courage.”</p>

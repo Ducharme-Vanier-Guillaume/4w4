@@ -15,6 +15,7 @@
 </head>
 <body>
     <div id="menu" class="global">
+        <!-- Permet d'ajouter un logo qui a été choisi à l'aide du personnaliser <<customiser>> -->
         <div class="logo"> <?php echo get_custom_logo(); ?> </div> 
         <header class="entete__menu">
             <input id="chk-burger" type="checkbox">
