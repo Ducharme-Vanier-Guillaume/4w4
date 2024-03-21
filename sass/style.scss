@@ -18,7 +18,8 @@ Dévellopé dans le cadrre du cour 4w4
 */
 
 /* variables css */
-@import "variable";
+@import "utile/couleurs";
+@import "utile/couleurs-class";
 
 @import "effet/vague" ;
 
@@ -26,7 +27,7 @@ Dévellopé dans le cadrre du cour 4w4
 
 /* variables utile */
 
-@import "utile/local";
+@import "local";
 
 
 

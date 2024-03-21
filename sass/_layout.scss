@@ -20,8 +20,6 @@ padding: 5rem 1rem;
 .global > header{
     flex: 0 1 1920px;
 
-    
-
 
 }
 
@@ -34,13 +32,19 @@ padding: 5rem 1rem;
 #acceuil{
     background-color: var(--couleur-arriere-acceuil);
     color: var(--couleur-acceuil);
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 10% 7rem 10%;
+
    
 }
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
     z-index: 1;
-    background : linear-gradient(180deg, var(--couleur-arriere-acceuil) 50%, var(--couleur-arriere-evenement)50%)
+    background : linear-gradient(180deg, var(--couleur-arriere-acceuil) 50%, var(--couleur-arriere-evenement)50%);
+
+    
     
 }
 #evenement{

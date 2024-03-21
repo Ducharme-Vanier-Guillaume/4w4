@@ -9,7 +9,7 @@
         <h1 class="bgc-texte"><?php echo get_bloginfo('name'); ?></h1>
         <h2 class="bgc-texte"><?php echo get_bloginfo('description'); ?></span>
             </h2>
-        <h3 class="bgc-texte">Tim - Collège de Maisonneuve</h3>
+        <h3 class="bgc-texte">Nous sommes là pour vous</h3>
         <button class="entete__button">Évènements</button>
         <link rel="stylesheet" href="style.css">
         </section>
@@ -18,7 +18,7 @@
  ?>
 </div>
 
-<div id="acceuil" class="global ">
+<div id="acceuil">
     <section class="accueil__section">
     <h2>Accueil (h2)</h2>
     <div class="section__cours">
@@ -41,14 +41,31 @@ the_title // echo du titre -->
     <?php endwhile; ?>
     <?php endif; ?>
 </div>
-        <!-- <p>Notre site internet pour le cours de 4w4</p>
-        <blockquote class="citation" cite="https://www.huxley.net/bnw/four.html">
-            <p>“Surprenez-vous tous les jours avec votre propre courage.”</p>
-            <footer>—Denholm Elliott, <cite>Brave New World</cite></footer> 
-         </blockquote> -->
-          
-     
-    </section>
+</section>
+
+<section class="accueil__section">
+    <h2>Les plus populaires</h2>
+    <div class="section__cours">
+<!--
+get_the_title() // retourne une chaine qui contient le titre
+the_title // echo du titre -->
+            
+        <?php if(have_posts()):
+        while(have_posts()): the_post();
+        ?>
+
+        <div class="carte">
+            
+            <h5><?php the_title() ?></h5> 
+            <?php the_category();  ?>
+            <p class="info"><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+            <p><a href="<?php echo get_permalink() ?>">Voir la suite</a> </p>
+    
+        </div>
+    <?php endwhile; ?>
+    <?php endif; ?>
+</div>
+</section>
 
 
     </div>

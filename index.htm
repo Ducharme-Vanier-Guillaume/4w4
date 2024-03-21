@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <!-- <link rel="stylesheet" href="http://localhost:8000/4w4-gdv/wp-content/themes/theme-gr2/normalize.css" >
-    <link rel="stylesheet" href="http://localhost:8000/4w4-gdv/wp-content/themes/theme-gr2/style.css" > -->
+    <link rel="stylesheet" href="normalize.css" >
+    <link rel="stylesheet" href="style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
@@ -17,24 +15,28 @@
 
 </head>
 <body>
-    <div id="menu" class="global">
+    <div id="menu" class="global clr-agencement-primaire">
+        <!-- Permet d'ajouter un logo qui a été choisi à l'aide du personnaliser <<customiser>> -->
+        <div class="logo"> <a href="http://localhost:8000/4w4-gdv/" class="custom-logo-link" rel="home" aria-current="page"><img width="500" height="500" src="http://localhost:8000/4w4-gdv/wp-content/uploads/2024/03/4136591-removebg-preview-1.png" class="custom-logo" alt="Club de voyage" decoding="async" fetchpriority="high" /></a> </div> 
         <header class="entete__menu">
             <input id="chk-burger" type="checkbox">
                 <label id="burger" for="chk-burger">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
             </label>
-            <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-6n3-stage-285h/">Communication</a></li>
-<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Méthode de recherche</a></li>
-<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-33"><a href="http://localhost:8000/4w4-gdv/2020/10/07/582-5w5-projet-web-en-equipe-105h/" aria-current="page">Animation en jeu</a></li>
-<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8000/4w4-gdv/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">Méthodes de recherche</a></li>
-<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#accueil">Accueil</a></li>
-<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#galerie">Galerie</a></li>
-<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#evenement">Évènements</a></li>
+            <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-73" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73"><a href="http://localhost:8000/4w4-gdv/category/aventure/">Aventure</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"><a href="http://localhost:8000/4w4-gdv/category/croisiere/">croisière</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"><a href="http://localhost:8000/4w4-gdv/category/culturel/">Culturel</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="http://localhost:8000/4w4-gdv/category/economique/">Économique</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"><a href="http://localhost:8000/4w4-gdv/category/pleine-nature/">Pleine nature</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="http://localhost:8000/4w4-gdv/category/repos/">Repos</a></li>
+<li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="http://localhost:8000/4w4-gdv/category/sport/">Sport</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="http://localhost:8000/4w4-gdv/category/zen/">Zen</a></li>
 </ul></nav>        </header>
-    </div>    <div id="entete" class="global">
+    </div>
+    <div id="entete" class="global">
         <section class="entete__header">
-        <h1 class="bgc-texte">Thème du groupe #2 (h1)</h1>
-        <h2 class="bgc-texte">4W4 - Conception interface <span> & développement Web</span>
+        <h1 class="bgc-texte">Club de voyage</h1>
+        <h2 class="bgc-texte">Nos membres avant tout</span>
             </h2>
         <h3 class="bgc-texte">Tim - Collège de Maisonneuve</h3>
         <button class="entete__button">Évènements</button>
@@ -50,33 +52,98 @@
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path class="remplissage2 d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
     </svg>
-</div>
-    </div>
-    <div id="acceuil" class="global ">
-        <section class="accueil__section">
-        <h2>Accueil (h2)</h2>
-        <div class="section__cours">
-        
-            <!-- // if(have_posts()){
-            //     while(have_posts()){
-            //         the_post();
-            //         the_title('<p>', '<p>');
-                    
-            //         $contenu = get_the_content();
-            //         $contenu = wp_trim_words($contenu, 10);
-            //         echo $contenu;
-            //     }
-            // } -->
+</div></div>
+
+<div id="acceuil" class="global ">
+    <section class="accueil__section">
+    <h2>Accueil (h2)</h2>
+    <div class="section__cours">
+<!--
+get_the_title() // retourne une chaine qui contient le titre
+the_title // echo du titre -->
             
-                            <div class="carte">
-                    <h5>582-5W5</h5>
-                    <h5>	Projet Web en équipe </h5> 
-                   
-      
-              <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p>
-              <h5>(105h)</h5> 
-              </div>
-                             </div>
+        
+        <div class="carte">
+            
+            <h5>Bruges, Belgique</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/repos/" rel="category tag">Repos</a></li></ul>            <p class="info">Bruges, surnommée la "Venise du Nord", est une ville médiévale…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/repos/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Cancún, Mexique</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/sport/" rel="category tag">Sport</a></li></ul>            <p class="info">Cancún est une destination ensoleillée offrant une multitude d'activités sportives…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/sport/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Costa Rica</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/aventure/" rel="category tag">Aventure</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li></ul>            <p class="info">Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/aventure/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Croisière sur le Nil, Égypte</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/croisiere/" rel="category tag">croisière</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li></ul>            <p class="info">Une croisière sur le Nil vous emmène dans un voyage…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/croisiere/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Parc national de Plitvice Lakes, Croatie</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li></ul>            <p class="info">Le parc national des lacs de Plitvice, en Croatie, est…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/pleine-nature/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Rishikesh, Inde</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/zen/" rel="category tag">Zen</a></li></ul>            <p class="info">Rishikesh, située dans l'État indien de l'Uttarakhand, est une ville…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/zen/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Saint-Pétersbourg, Russie</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li></ul>            <p class="info">Saint-Pétersbourg, la Venise du Nord, est une ville impériale aux…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/culturel/">Voir la suite</a> </p>
+    
+        </div>
+    
+        <div class="carte">
+            
+            <h5>Whistler, Canada</h5> 
+            <ul class="post-categories">
+	<li><a href="http://localhost:8000/4w4-gdv/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8000/4w4-gdv/category/sport/" rel="category tag">Sport</a></li></ul>            <p class="info">Whistler, située en Colombie-Britannique, est une destination de renommée mondiale…</p>
+            <p><a href="http://localhost:8000/4w4-gdv/sport/">Voir la suite</a> </p>
+    
+        </div>
+        </div>
         <!-- <p>Notre site internet pour le cours de 4w4</p>
         <blockquote class="citation" cite="https://www.huxley.net/bnw/four.html">
             <p>“Surprenez-vous tous les jours avec votre propre courage.”</p>
@@ -129,6 +196,7 @@
 </div>
 
     </div>
+
     <div id="footer" class="global">
         <footer class="footer__section">
             <h2>Footer (h2)</h2>
@@ -153,4 +221,4 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
   </style>
-</html>
+</html>   

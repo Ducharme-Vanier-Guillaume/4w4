@@ -22,6 +22,9 @@
             <?php endwhile; ?>
           <?php endif; ?>
        </div>
+
+       
+       
         <!-- <p>Notre site internet pour le cours de 4w4</p>
         <blockquote class="citation" cite="https://www.huxley.net/bnw/four.html">
             <p>“Surprenez-vous tous les jours avec votre propre courage.”</p>
