@@ -19,6 +19,18 @@
 </div>
 
 <div id="acceuil">
+<section class="accueil__section">
+    <h2>Les plus populaires</h2>
+    <div class="section__cours">
+<?php foreach(get_categories() as $categorie): ?>
+    <div class="carte">
+        <h4><?php echo $categorie->name; ?></h4>
+        <p><?php echo wp_trim_words($categorie->description, 10); ?></p>
+        <p><a href="<?php echo get_category_link($categorie->term_id); ?>">Voir les destinations</a></p> 
+    </div>
+    <?php endforeach; ?>
+</div>
+</section>
     <section class="accueil__section">
     <h2>Accueil (h2)</h2>
     <div class="section__cours">
@@ -43,29 +55,7 @@ the_title // echo du titre -->
 </div>
 </section>
 
-<section class="accueil__section">
-    <h2>Les plus populaires</h2>
-    <div class="section__cours">
-<!--
-get_the_title() // retourne une chaine qui contient le titre
-the_title // echo du titre -->
-            
-        <?php if(have_posts()):
-        while(have_posts()): the_post();
-        ?>
 
-        <div class="carte">
-            
-            <h5><?php the_title() ?></h5> 
-            <?php the_category();  ?>
-            <p class="info"><?php echo wp_trim_words(get_the_content(), 10); ?></p>
-            <p><a href="<?php echo get_permalink() ?>">Voir la suite</a> </p>
-    
-        </div>
-    <?php endwhile; ?>
-    <?php endif; ?>
-</div>
-</section>
 
 
     </div>
