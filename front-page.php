@@ -20,19 +20,20 @@
 
 <div id="acceuil">
 <section class="accueil__section">
-    <h2>Les plus populaires</h2>
+    <h2>Nos catégorie</h2>
     <div class="section__cours">
 <?php foreach(get_categories() as $categorie): ?>
     <div class="carte">
-        <h4><?php echo $categorie->name; ?></h4>
+        <h5><?php echo $categorie->name; ?></h5>
         <p><?php echo wp_trim_words($categorie->description, 10); ?></p>
+        <p><?php echo $categorie->count; ?> destinations</p>
         <p><a href="<?php echo get_category_link($categorie->term_id); ?>">Voir les destinations</a></p> 
     </div>
     <?php endforeach; ?>
 </div>
 </section>
     <section class="accueil__section">
-    <h2>Accueil (h2)</h2>
+    <h2>Les plus populaires</h2>
     <div class="section__cours">
 <!--
 get_the_title() // retourne une chaine qui contient le titre
